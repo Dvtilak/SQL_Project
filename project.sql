@@ -228,9 +228,6 @@ show triggers;
 
 drop trigger if exists trg_calculate_cgpa;
 
-
-
-
 -- gpa for each semester 
 select 
     student_id,
@@ -320,9 +317,6 @@ join
     students s on s.student_id = g.student_id
 group by 
     g.student_id, g.semester_id;
-
-
-
 
 
 -- result summary 
